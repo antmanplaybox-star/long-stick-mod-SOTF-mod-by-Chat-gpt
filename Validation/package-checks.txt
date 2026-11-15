@@ -1,0 +1,11 @@
+PASS 22 production files byte-identical to published v0.4.5. Only Kelvin type registration and its readback, the Mod.cs version label and project/manifest versions change; no new production files.
+PASS Kelvin setup outside EnsureTypeIds, all 94 pure-rule scenarios, crafting animation/ingredients, tree behavior, natural spawning, model appearance, book artwork/title, holder capacity and native hook scope are retained.
+PASS CargoCart v0.1.16: 39 source files and Release DLL unchanged; this standalone ZIP does not contain or replace that mod.
+PASS GolfCartBatteryUpgrade v0.1.1: 14 source files and Release DLL unchanged; this standalone ZIP does not contain or replace that mod.
+PASS SkullStorage v0.1.0: 13 source files and Release DLL unchanged; this standalone ZIP does not contain or replace that mod.
+PASS Release build: zero warnings/errors; 94 existing offline scenarios, 69 native hook signatures and all static regressions.
+PASS native TypeInfo is a CLR wrapper class for an IL2CPP value type; unsafe generic insertion is absent, native boxed IList signature and post-insertion ID/group/name verification are present.
+PASS published v0.4.5 fails the new unsafe-native-struct regression guard; supplied fatal stack matches AI type-name conversion on reload with Battery Upgrade v0.1.1 active and its old callback errors absent.
+PASS no additional boxed native struct uses a generic native list write in the updated Long Stick assembly; no new native hooks, custom native imports or global table clearing.
+PASS matching standalone 0.4.6 project/manifest/assembly metadata; one LongStickSpear DLL with source/docs/license; no game/loader DLLs, raw user logs or personal data.
+LIMIT: native Unity code was not executed. Fully exit the game before installing; verify repeated main-menu reloads, world vegetation, saved battery charge and Kelvin gathering in game.

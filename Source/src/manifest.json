@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ToniMacaroni/RedLoader/main/MetadataSchema.json",
+  "id": "LongStickSpear",
+  "name": "Long Stick Spear",
+  "author": "Ibrahim / OpenAI",
+  "version": "0.4.6",
+  "description": "Long Sticks from stick-producing trees and natural ground-stick spots (10% default), a spear recipe, 20-capacity storage and Kelvin commands with deferred AI work. Single player.",
+  "loaderVersion": "0.8.6",
+  "type": "Mod",
+  "platform": "Client"
+}

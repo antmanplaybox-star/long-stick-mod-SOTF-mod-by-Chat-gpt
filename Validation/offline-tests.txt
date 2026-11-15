@@ -1,0 +1,95 @@
+PASS A stick-producing SmallTree qualifies
+PASS Stick-producing bushes qualify without tree-specific names
+PASS Log-only trees do not acquire extra loot
+PASS Stumps stay vanilla
+PASS Construction pieces stay vanilla
+PASS Native tree-cutting context allows existing stick loot
+PASS Leaf-only small trees retain their drops
+PASS An explicit sapling name works without a locator
+PASS Generic names cannot turn all breakables into thin trees
+PASS Stump names stay excluded in every vegetation category
+PASS Spruce seedlings recorded as Bush in the game log now qualify
+PASS Tree seedlings and saplings qualify with a Bush or missing locator
+PASS Stick-producing shrubs from the earlier log now qualify
+PASS Stick-producing Tree entries qualify without the log-cutting pipeline
+PASS Vegetation support still excludes stumps, construction and absent stick loot
+PASS Plant-category stick sources qualify but non-stick plants are excluded
+PASS Known natural categories do not depend on prefab naming
+PASS Woody-vegetation names work when the locator is missing
+PASS Non-vegetation locator categories never qualify through a plant name
+PASS Detached falling-tree branches qualify without a locator or tree-like name
+PASS A falling tree's logs and leaves survive stick replacement unchanged
+PASS A selected falling-tree stick is replaced without reordering spawn choices
+PASS Selecting logs, leaves or an existing Long Stick does not change a spawn table
+PASS Invalid falling-tree spawn indices leave the table alone
+PASS A selected-drop factory failure leaves the original table intact
+PASS Zero-count plant placeholders and the falling cut body retain their original references
+PASS Woody vegetation recognition is independent of the native converted table flag
+PASS A cut-prefab graph follows the later emitter rather than requiring immediate sticks
+PASS Referenced-prefab cycles terminate without revisiting nodes
+PASS Shared pickup prefabs are leaves and never become marked tree sources
+PASS Prefab traversal respects its budget on a large reference chain
+PASS Shared prefab references are processed once
+PASS Only a live normal-stick pickup with tree provenance can be converted
+PASS All stick definitions retain their quantities and order while leaves retain identity
+PASS Unrelated loot does not call the replacement factory
+PASS A failed replacement leaves the source list intact
+PASS Existing long-stick drops do not get replaced again
+PASS Linked placeholders stay native and positive direct loot retains its condition
+PASS A replacement failure after an earlier copy leaves all native source entries intact
+PASS A tree with no stick references gains no long-stick definition
+PASS The logged small spruce tree qualifies while disabled quarter-log options stay native
+PASS The user's final large log-producing tree is excluded
+PASS A tree with both active log and stick yields is left entirely native in either order
+PASS Disabled stick spawners do not qualify an unrelated tree
+PASS Active quarter-log loot also excludes a tree without depending on an ID list
+PASS Empty, unrelated and already-long loot do not create new stick drops
+PASS Only positive normal-stick direct counts qualify for plant reference replacement
+PASS The alternate spear uses exactly one consumable long stick and a reusable knife
+PASS Model extent detection supports sticks oriented on each axis
+PASS Invalid model extents are rejected
+PASS A rotated model doubles its length while preserving both thickness axes
+PASS Nonuniform native scaling is included when selecting the length axis
+PASS A native pickup-root scale reset cannot cancel the separate length pivot
+PASS Mirrored mesh scales keep their handedness and unchanged thickness
+PASS Empty or invalid loaded mesh extents do not create a length pivot
+PASS The long-stick holder accepts two ten-stick trips and rejects the twenty-first
+PASS Normal sticks and unrelated items cannot enter the long-stick holder
+PASS A batch cannot overflow a nearly full holder
+PASS Removing one item from a full holder opens exactly one slot
+PASS Multiple native storage slots share a total budget of twenty
+PASS Invalid or overflowing deposit counts are rejected
+PASS Native stick-holder names outrank unrelated structures
+PASS Copied cyclic tree emitters resolve to copies without recursion
+PASS Two cut branches share one copied deferred emitter
+PASS A deferred emitter replaces stick leaves while preserving logs, order and sources
+PASS A failed copy rewrite leaves native source references intact
+PASS Natural ground stick chance defaults to ten percent
+PASS The same natural location keeps its choice across repeated loads and LODs
+PASS Drop and storage contexts stay unchanged even at a hundred percent
+PASS Cleared or overridden map locations are not repopulated
+PASS Other natural items and already-long sticks do not enter the chance roll
+PASS Billboard and invalid LOD requests keep their native source
+PASS Zero disables natural replacements and a hundred percent selects all eligible locations
+PASS Natural chance values are clamped without accepting non-finite settings
+PASS The stable map roll produces about ten percent over many independent positions
+PASS A placement identity has a process-independent fixed hash
+PASS Only authored default-state world-item stick records are natural sources
+PASS Static virtual pickup provenance rejects runtime, dynamic and despawning sticks
+PASS Natural spot keys tolerate tiny position noise and distinguish nearby stick locations
+PASS Invalid world positions never create spawn records
+PASS Supplemental spot chance is stable, zero-disabled and complete at a hundred percent
+PASS Position-key formatting is independent of the current language
+PASS Only the declared dedicated scatter pool is a natural pool source
+PASS Natural ground scatter accepts loose normal sticks and excludes other item types
+PASS Ground-scatter source guards exclude collected items, inactive templates, vegetation and storage
+PASS Kelvin reserves a distinct nonzero type within the native encoding mask
+PASS Kelvin refuses an exhausted item type encoding rather than overwriting another type
+PASS Unsupported Kelvin type encodings are rejected
+PASS The new Kelvin order gathers Long Sticks rather than converting ordinary sticks
+PASS Kelvin's ordinary order leaves Long Sticks for the separate order
+PASS The Long Stick order does not empty storage to refill another holder
+PASS Stick controller queries use the Long Stick inventory only during its own order
+PASS Carrying reuses stick animation names while inventory identity remains separate
+PASS Kelvin type IDs remain contiguous for the game's dense native tables
+94 offline source, probability, Kelvin routing, geometry and storage scenarios passed. These do not execute Unity or the game.

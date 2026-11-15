@@ -1,0 +1,8 @@
+MSBuild version 17.3.4+a400405ba for .NET
+  LongStickSpear -> /workspace/scratch/067c2d504c31/LongStickSpear/Source/src/bin/Release/net6.0/LongStickSpear.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.39

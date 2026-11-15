@@ -1,0 +1,97 @@
+PASS native AI struct registration: generated generic Add's boxed-header path is absent; the native IList object overload accepts the box and its stored ID/group/name are read back.
+PASS explicit slider metadata range 0..100; SDK default maximum of 10 is not used.
+PASS native signature: Sons.Gameplay.BreakableObject.SpawnDrops -> BeforeDrops
+PASS native signature: Sons.Gameplay.BreakableObject.SpawnDrops -> AfterDrops
+PASS native signature: Sons.Gameplay.BreakableObject.SpawnDrops -> DropFinalizer
+PASS native signature: Sons.Gameplay.PickUp.OnEnable -> PickupReady
+PASS native signature: Sons.Gameplay.PickUp.SetItemInstance -> PickupReady
+PASS native signature: Sons.Crafting.CraftingSystem.Initialize -> CraftingInitialize
+PASS native signature: Sons.Crafting.CraftingSystem.Initialize -> CraftingInitialized
+PASS native signature: Sons.Crafting.CraftingSystem.OnEnable -> CraftingOpened
+PASS native signature: Sons.Crafting.CraftingSystem.AddIngredient -> IngredientAdded
+PASS native signature: Sons.Crafting.CraftingSystem.OnRevealResultingItemInternal -> CraftReveal
+PASS native signature: Sons.Crafting.CraftingSystem.OnCraftCompleteInternal -> CraftComplete
+PASS native signature: Sons.Crafting.CraftingSystem.TryCombineIngredients -> BeforeCombine
+PASS native signature: Sons.Crafting.CraftingSystem.TryCombineIngredients -> AfterCombine
+PASS native signature: Sons.Crafting.CraftingSystem.TryCombineIngredients -> CombineFinalizer
+PASS native signature: Sons.Inventory.InventoryLayoutItemGroup.OnAddItemToMat -> BeforeAddToMat
+PASS native signature: Sons.Inventory.InventoryLayoutItemGroup.OnAddItemToMat -> AfterAddToMat
+PASS native signature: Sons.Crafting.Structures.ScrewStructureManager.OnBeforeLoad -> StructuresBeforeLoad
+PASS native signature: Sons.Weapon.BlueprintBookController.Initialize -> BookInitialize
+PASS native signature: Sons.Weapon.BlueprintBookController.UpdatePageLocalization -> BookLocalizationUpdated
+PASS native signature: Sons.Inventory.StructureStorage.ValidateItemPlacement -> ValidateStorageItem
+PASS native signature: Sons.Inventory.ItemInstanceManager.TryAddItems -> BeforeStorageAddItems
+PASS native signature: Sons.Inventory.ItemInstanceManager.TryAddItem -> BeforeStorageAddInstance
+PASS native signature: Sons.Inventory.ItemInstanceManager.DeserializeItemsFromExternalData -> StorageDeserialized
+PASS native signature: Sons.Gameplay.TreeCutting.TreeCutManager.FellTree -> BeforeTreeFell
+PASS native signature: Sons.Gameplay.VirtualPickup.Setup -> NaturalVirtualData
+PASS native signature: Sons.Gameplay.VirtualPickupSwitcher.GeneratePickupData -> NaturalSceneData
+PASS native signature: Sons.Gameplay.VirtualPickup.SwitchToReal -> NaturalVirtualReal
+PASS native signature: GreebleZone.MainThreadRefresh -> GroundZoneRefresh
+PASS native signature: GreebleZone.SpawnIndex -> GroundZoneSpawn
+PASS native signature: Sons.Gameplay.PickUp.GrabEnter -> GroundStickLook
+PASS native signature: Sons.Gameplay.Robby.Start -> PrepareOrders
+PASS native signature: Sons.Gameplay.Robby.BuildTactipadUI -> PrepareOrders
+PASS native signature: Sons.Gameplay.Robby.RestoreSavedOrders -> PrepareOrders
+PASS native signature: Sons.Gameplay.Robby.PreShowCarousel -> DropOptions
+PASS native signature: Sons.Gameplay.Robby.RunOrder -> BeforeOrder
+PASS native signature: Sons.Gameplay.Robby.RunOrder -> AfterOrder
+PASS native signature: Sons.Gameplay.Robby.GetItemNeededCount -> RobbyItemQuery
+PASS native signature: Sons.Gameplay.Robby.FindValidHolders -> HolderItemQuery
+PASS native signature: Sons.Gameplay.Robby.FindValidHolders -> HoldersFound
+PASS native signature: Sons.Ai.Vail.StimuliTypes.PickupStimuli.Validate -> ValidatePickup
+PASS native signature: Sons.Ai.Vail.StimuliTypes.PickupStimuli.Validate -> ValidatedPickup
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.CanPickup -> CanPickup
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.Pickup -> BeforeWorldPickup
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.Pickup -> AfterWorldPickup
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.Pickup -> PickingUp
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.Pickup -> PickedUp
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.ClearWorldItem -> CollectedWorldItem
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.SetInitialCarry -> BeforeRestoreCarry
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.SetInitialCarry -> AfterRestoreCarry
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.GetCount -> InventoryItemQuery
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.IsHolding -> InventoryItemQuery
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.IsFull -> InventoryItemQuery
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.ShowAttachedPickup -> InventoryItemQuery
+PASS native signature: Sons.Ai.Vail.VailActor.GetInventoryCount -> ActorCountQuery
+PASS native signature: Sons.Ai.Vail.VailActor.GetNeededCount -> ActorNeededQuery
+PASS native signature: Sons.Ai.Vail.VailActor.PickupItem -> ActorItemQuery
+PASS native signature: Sons.Ai.Vail.VailActor.ShowPickupItem -> ActorItemQuery
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryManager.SetCarryParam -> CarryType
+PASS native signature: Sons.Ai.Vail.Inventory.VailPickupManager.VailItemToItemId -> ItemId
+PASS native signature: Sons.Ai.Vail.Inventory.VailPickupManager.ItemIdToVailItem -> ItemType
+PASS native signature: Sons.Ai.Vail.Inventory.VailPickupManager.GetTypeInfo -> PrepareTypeInfo
+PASS native signature: Sons.Ai.Vail.Inventory.VailPickupManager.GetMaxHeld -> MaxHeld
+PASS native signature: Sons.Ai.Vail.Inventory.VailPickupManager.ShouldDropHeldItem -> ShouldDrop
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryTypeList.GetTypeId -> TypeId
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryTypeList.GetGroupId -> GroupId
+PASS native signature: Sons.Ai.Vail.Inventory.InventoryTypeList.TypeIdToString -> TypeName
+PASS native signature: Sons.Inventory.InWorldLayoutItemGroup.Sons_Ai_Vail_Inventory_IVailDropTarget_GetItemType -> HolderType
+PASS native signature: Sons.Inventory.InWorldLayoutItemGroup.Sons_Ai_Vail_Inventory_IVailDropTarget_TryAddItem -> HolderDeposit
+PASS native signature: Sons.Inventory.InWorldLayoutItemGroup.Sons_Ai_Vail_Inventory_IVailDropTarget_TryAddItem -> Deposited
+PASS all other native generic list writes use reference types; no additional boxed native struct insertion remains in this assembly.
+PASS item registration occurs after SDK startup and is checked before save loading.
+PASS no SDK/menu hook installation; inventory setup is deferred beyond startup dispatch; global impact, spawner and pool-conversion hooks/types are absent.
+PASS no global world scans and no tree-loot inventory injection.
+PASS direct loot references restored on completion/errors; no restoration writes to native body or count state.
+PASS original falling body/extras/hierarchy/activation retained, log-producing trees excluded, native loot lists restored on disable/exit, and no live pickup conversion.
+PASS positive direct plant loot only, intact cut-body references, native quantities and complete spawn-definition fields.
+PASS authored/static provenance, read-only original sources and owned extras; collection lasts only this session, resets before reload, and legacy saved consumption is ignored.
+PASS bounded dedicated scatter-pool/zone discovery, original sources untouched, vegetation/storage exclusions and diagnostic-only look observer.
+PASS alternate recipe retains SDK/reusable-ingredient/output-cache handling and inherits the original spear animation/audio without the HerbMix fallback.
+PASS recipe availability and long-stick slot validation are refreshed after setup, on inventory open, and around crafting input.
+PASS the crafting ingredient retains its native mat-layout animation.
+PASS custom item has separate UI data, a registration collision check, and an inactive pickup template.
+PASS an injected appearance component is attached to only the custom pickup, inventory and ingredient layouts.
+PASS deferred model loading, local mesh discovery, a separate length pivot and root protection; shared mesh assets are unchanged.
+PASS the separate holder clones native recipe/ghost/built prefabs and registers them before structure save loading.
+PASS explicit LONG STICK STORAGE caption, separate recipe/page localization, current custom-recipe slot routing and native typography.
+PASS deferred detailed book mip capture, stable recipe slots, owned mip/filter quality, no global texture changes and temporary-resource/request cleanup.
+PASS a separate book page, long-stick-only deposit guards, a total twenty-item capacity and post-load capacity configuration.
+PASS direct natural/appearance source registration, local native AI targets, specific storage/carried exclusions and bounded native work diagnostics.
+PASS deferred AI work, cached task/type setup, inactive loose-item stimuli between tasks and own-instance carry aliases.
+PASS separate Kelvin AI type/prefabs, appended notebook order, gathering filters, carry animation aliases, native holder deposits, save-load type mapping and exception-safe session cleanup.
+PASS matching metadata/version and no custom native imports.
+PASS supplied fatal stack matches the repaired AI type registration/name-conversion path during BeforeLoadSave; raw crash data is excluded from the package.
+PASS supplied session uses Battery Upgrade v0.1.1 without the removed save-callback errors; the current fatal stack requires the Long Stick AI registration fix.
+Static audit passed. This does not execute the game's native implementations.

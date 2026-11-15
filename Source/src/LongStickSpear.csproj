@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+    <Version>0.4.6</Version><Deterministic>true</Deterministic><DebugType>embedded</DebugType>
+    <GameAssembliesDir Condition="'$(GameAssembliesDir)' == ''">$(GameDir)/_Redloader/Game</GameAssembliesDir>
+    <LoaderDir Condition="'$(LoaderDir)' == ''">$(GameDir)/_Redloader/net6</LoaderDir>
+    <UserLoaderDir Condition="'$(UserLoaderDir)' == ''">$(LoaderDir)</UserLoaderDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RedLoader" HintPath="$(UserLoaderDir)/RedLoader.dll" Private="false" />
+    <Reference Include="SonsSdk" HintPath="$(UserLoaderDir)/SonsSdk.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(LoaderDir)/0Harmony.dll" Private="false" />
+    <Reference Include="Il2CppInterop.Runtime" HintPath="$(LoaderDir)/Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="Il2CppInterop.Common" HintPath="$(LoaderDir)/Il2CppInterop.Common.dll" Private="false" />
+    <Reference Include="$(GameAssembliesDir)/*.dll" Private="false" />
+    <EmbeddedResource Include="manifest.json" />
+  </ItemGroup>
+  <Target Name="CheckReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(GameAssembliesDir)/Sons.dll')" Text="Set GameDir to your game installation, including the generated RedLoader Game assemblies." />
+  </Target>
+</Project>
